@@ -33,5 +33,7 @@ public class ExercicioAula2 {
 		System.out.println("Quantidade de filhos: " + qtdFilhos);
 		System.out.println("Escolaridade: " + escolaridade);
 		System.out.println("Renda mensal: " + rendaMensal);
+
+		input.close();
 	}
 }

@@ -26,5 +26,7 @@ public class EntradaDados {
         System.out.println("Idade: " + idade);
         System.out.println("Estado civil: " + estadoCivil);
         System.out.println("Peso: " + peso);
+
+        input.close();
     }
 }

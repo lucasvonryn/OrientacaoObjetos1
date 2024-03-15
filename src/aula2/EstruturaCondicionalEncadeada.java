@@ -24,5 +24,7 @@ public class EstruturaCondicionalEncadeada {
             System.out.println("Você está reprovado.");
 
         }
+
+        input.close();
     }
 }

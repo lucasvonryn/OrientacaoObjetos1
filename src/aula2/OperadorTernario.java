@@ -14,5 +14,7 @@ public class OperadorTernario {
         String resultado = (valor % 2 == 0) ? "Valor par." : "Valor ímpar.";
 
         System.out.println(resultado);
+
+        input.close();
     }
 }
