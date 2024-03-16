@@ -27,7 +27,7 @@ public class Calculadora {
         if (ligado) {
             System.out.println(x + y);
         } else {
-            System.out.println("Calculadora desligada...");
+            System.out.println("Ligue a calculadora para fazer uma operação.");
         }
 
     }
@@ -37,7 +37,7 @@ public class Calculadora {
         if (ligado) {
             System.out.println(x - y);
         } else {
-            System.out.println("Calculadora desligada.");
+            System.out.println("Ligue a calculadora para fazer uma operação.");
         }
 
     }
@@ -47,7 +47,7 @@ public class Calculadora {
         if (ligado) {
             System.out.println(x * y);
         } else {
-            System.out.println("Calculadora desligada...");
+            System.out.println("Ligue a calculadora para fazer uma operação.");
         }
 
     }
@@ -57,7 +57,7 @@ public class Calculadora {
         if (ligado) {
             System.out.println(x / y);
         } else {
-            System.out.println("Calculadora desligada...");
+            System.out.println("Ligue a calculadora para fazer uma operação.");
         }
 
     }

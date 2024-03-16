@@ -14,6 +14,6 @@ public class CalculadoraTeste {
         calculadora1.somar(2, 3);
         calculadora1.ligar();
         calculadora1.somar(2, 3);
-
+        calculadora1.multiplicar(2, 3);
     }
 }
