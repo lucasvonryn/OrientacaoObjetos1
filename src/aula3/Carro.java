@@ -1,9 +1,8 @@
 package aula3;
 
 public class Carro {
-    
-    // Declarar atributos da classe
 
+    // Declarar atributos da classe
     String modelo;
     String marca;
     int ano;
@@ -11,7 +10,6 @@ public class Carro {
     String cor;
 
     // Declarar os métodos da classe (funções e procedimentos em C)
-
     public void ligar() {
 
     }
