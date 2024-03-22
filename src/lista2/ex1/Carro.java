@@ -1,17 +1,16 @@
-package aula5;
+package lista2.ex1;
 
 public class Carro {
     
-    // Declarar atributos da classe
     String modelo;
     String marca;
-    int ano;
-    String placa;
     String cor;
+    int ano;
+    int renavam;
+    int chassi;
+    String placa;
     boolean ligado = false;
-    int velocidade = 0;
 
-    // Declarar os métodos da classe (funções e procedimentos em C)
     public void ligar() {
 
         if (this.ligado == false) {
@@ -25,14 +24,13 @@ public class Carro {
             System.out.println(this.marca + " " + this.modelo + " já está ligado.");
 
         }
-    
     }
 
     public void desligar() {
 
         if (this.ligado == true) {
 
-            ligado = false;
+            this.ligado = false;
 
             System.out.println(marca + " " + modelo + " está desligando.");
 
@@ -41,32 +39,17 @@ public class Carro {
             System.out.println(this.marca + " " + this.modelo + " já está desligado.");
 
         }
+ 
     }
 
     public void acelerar() {
 
         System.out.println(marca + " " + modelo + " está acelerando.");
+
     }
 
     public void frear() {
 
         System.out.println(marca + " " + modelo + " está freando.");
-    }
-
-    public void imprimirDados () {
-
-        System.out.println("==================");
-        System.out.println("Modelo: " + modelo);
-        System.out.println("Marca: " + marca);
-        System.out.println("Ano: " + ano);
-        System.out.println("Placa: " + placa);
-        System.out.println("Cor: " + cor);
-        System.out.println("==================");
-    }
-
-    @Override
-    public String toString() {
-
-        return modelo + " " + marca + " " + ano + " " + placa + " " + cor;
     }
 }
