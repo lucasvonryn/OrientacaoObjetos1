@@ -20,6 +20,8 @@ public class ContaBancaria {
 		this.saldo += valor;
 		System.out.println("Deposito realizado com sucesso");
 		System.out.println("Saldo atual: " + this.saldo);
+
+		calcularRendimento();
 	}
 	
 	public void sacar(double valor) {
