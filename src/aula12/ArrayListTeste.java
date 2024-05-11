@@ -9,7 +9,7 @@ public class ArrayListTeste {
     	
     	Carro carro1 = new Carro("408", "Ferrari", 2016);
           
-        List listaGenerica = new ArrayList();
+        List<String> listaGenerica = new ArrayList<String>();
 
         listaGenerica.add("Lucas Von Ryn");
         listaGenerica.add("Milena Ferreira");
