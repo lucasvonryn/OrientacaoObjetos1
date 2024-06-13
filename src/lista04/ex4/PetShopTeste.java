@@ -1,7 +1,5 @@
 package lista04.ex4;
 
-import java.time.LocalDate;
-
 public class PetShopTeste {
     
     public static void main(String[] args) {
