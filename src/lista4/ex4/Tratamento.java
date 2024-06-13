@@ -6,18 +6,50 @@ public class Tratamento {
     private String dataInicio;
     private String dataFim;
 
-    public Tratamento(String descricao, String dataInicio) {
+    public Tratamento(String descricao, String dataInicio, String dataFim) {
 
         this.descricao = descricao;
         this.dataInicio = dataInicio;
+        this.dataFim = dataFim;
     }
 
-    public void emitirRelatorio() {
+    public Tratamento(String descricao, String dataInicio) {
 
-        System.out.println("=== DADOS DO TRATAMENTO ===");
-        System.out.println("Descrição: " + descricao);
-        System.out.println("Data de início: " + dataInicio);
-        System.out.println("Data de fim: " + dataFim);
-        System.out.println("===========================");
+        this(descricao, dataInicio, null);
+    }
+
+    public String getDescricao() {
+
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+
+        this.descricao = descricao;
+    }
+
+    public String getDataInicio() {
+        return dataInicio;
+    }
+
+    public void setDataInicio(String dataInicio) {
+
+        this.dataInicio = dataInicio;
+    }
+
+    public String getDataFim() {
+
+        return dataFim;
+    }
+
+    public void setDataFim(String dataFim) {
+
+        this.dataFim = dataFim;
+    }
+
+    @Override
+    public String toString() {
+
+        return "Tratamento: " + descricao + ", Inicio: " + dataInicio + ", Fim: " + (dataFim != null ? dataFim : "Em andamento");
     }
 }
