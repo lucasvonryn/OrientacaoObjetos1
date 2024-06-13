@@ -1,4 +1,4 @@
-package lista2.ex3;
+package lista02.ex3;
 
 public class Notebook {
     

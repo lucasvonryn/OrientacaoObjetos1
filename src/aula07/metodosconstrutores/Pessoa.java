@@ -1,4 +1,4 @@
-package aula07;
+package aula07.metodosconstrutores;
 
 public class Pessoa {
     

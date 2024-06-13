@@ -1,4 +1,4 @@
-package lista1.Ex1;
+package lista01.ex1;
 
 public class CarroTeste {
     

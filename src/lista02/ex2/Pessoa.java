@@ -1,4 +1,4 @@
-package lista2.ex2;
+package lista02.ex2;
 
 public class Pessoa {
     

@@ -1,4 +1,4 @@
-package lista1.Ex5;
+package lista01.ex5;
 
 public class CalculadoraTeste {
     

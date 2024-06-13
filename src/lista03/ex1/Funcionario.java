@@ -1,4 +1,4 @@
-package lista3.ex1;
+package lista03.ex1;
 
 public class Funcionario {
 

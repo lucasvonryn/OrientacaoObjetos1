@@ -1,4 +1,4 @@
-package lista3.ex4;
+package lista03.ex4;
 
 public class ContaBancaria {
 

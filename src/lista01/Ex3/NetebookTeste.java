@@ -1,4 +1,4 @@
-package lista1.Ex3;
+package lista01.ex3;
 
 public class NetebookTeste {
     

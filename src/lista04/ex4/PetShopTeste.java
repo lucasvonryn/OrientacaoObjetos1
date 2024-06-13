@@ -1,4 +1,4 @@
-package lista4.ex4;
+package lista04.ex4;
 
 import java.time.LocalDate;
 

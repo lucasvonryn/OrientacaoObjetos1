@@ -1,4 +1,4 @@
-package lista4.ex2;
+package lista04.ex2;
 
 public class DisciplinaTeste {
     

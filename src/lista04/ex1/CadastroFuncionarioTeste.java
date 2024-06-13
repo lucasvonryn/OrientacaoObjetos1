@@ -1,4 +1,4 @@
-package lista4.ex1;
+package lista04.ex1;
 
 public class CadastroFuncionarioTeste {
     

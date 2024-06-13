@@ -1,4 +1,4 @@
-package lista3.ex2;
+package lista03.ex2;
 
 public class Disciplina {
     

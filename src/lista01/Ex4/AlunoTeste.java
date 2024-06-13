@@ -1,4 +1,4 @@
-package lista1.Ex4;
+package lista01.ex4;
 
 public class AlunoTeste {
     

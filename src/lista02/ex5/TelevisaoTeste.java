@@ -1,4 +1,4 @@
-package lista2.ex5;
+package lista02.ex5;
 
 public class TelevisaoTeste {
     

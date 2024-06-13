@@ -1,4 +1,4 @@
-package lista3.ex3;
+package lista03.ex3;
 
 public class CalculadoraTeste {
     
