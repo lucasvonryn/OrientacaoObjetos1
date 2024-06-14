@@ -45,4 +45,9 @@ public class Livro {
         
         this.diaDevolucao = dia;
     }
+
+    public int getDiaEmprestimo() {
+
+        return this.diaEmprestimo;
+    }
 }

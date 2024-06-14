@@ -6,7 +6,7 @@ import java.util.List;
 public class Biblioteca {
 
     private List<Livro> livros;
-
+    
     public Biblioteca() {
 
         this.livros = new ArrayList<>();
@@ -55,12 +55,26 @@ public class Biblioteca {
 
     public void devolverLivro(String titulo, int diaDevolucao) {
 
+        int totalDias;
+        int diasExcedidos;
+
         for (Livro livro : livros) {
 
             if (livro.getTitulo() == titulo) {
                 
                 if (!livro.getDisponivel()) {
+                    
+                    totalDias = diaDevolucao - livro.getDiaEmprestimo();
+                    diasExcedidos = totalDias - 7;
 
+                    if (totalDias <= 7) {
+                        livro.setDisponivel(true);
+                        System.out.println("Livro devolvido com sucesso!");
+                    } else {
+                        livro.setDisponivel(true);
+                        System.out.println("Você excedeu o prazo máximo para devolução em " + diasExcedidos + ".");
+                        System.out.println("A multa é de R$ 1,50 por dia, total: " + (diasExcedidos * 1.5));
+                    }
                 } else {
                     System.out.println("Livro já está disponível. Não é possível devolve-lo.");
                 }
