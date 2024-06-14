@@ -19,7 +19,7 @@ public class Evento {
         this.ingressosDisponiveis = local.getCapacidadeMaxima();
     }
 
-    public boolean venderIngressos(int quantidade) {
+    public boolean checarDisponibilidadeIngressos(int quantidade) {
 
         if (quantidade > ingressosDisponiveis) {
             return false;

@@ -16,6 +16,6 @@ public class Artista {
     @Override
     public String toString() {
 
-        return nome + " (" + nacionalidade + ")";
+        return nome + " (" + nacionalidade + ") - Biografia: " + biografia;
     }
 }
