@@ -23,7 +23,7 @@ public class Biblioteca {
 
             if (livro.getTitulo() == titulo) {
                 
-                if (livro.getDisponibilidade()) {
+                if (livro.getDisponivel()) {
                     System.out.println("Livro disponível.");
                 } else {
                     System.out.println("Livro indisponível.");
@@ -60,7 +60,7 @@ public class Biblioteca {
             if (livro.getTitulo() == titulo) {
                 
                 if (!livro.getDisponivel()) {
-                    
+
                 } else {
                     System.out.println("Livro já está disponível. Não é possível devolve-lo.");
                 }
