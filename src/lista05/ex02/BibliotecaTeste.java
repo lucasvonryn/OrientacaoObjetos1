@@ -14,5 +14,9 @@ public class BibliotecaTeste {
         biblioteca.adicionarLivro(livro3);
 
         biblioteca.emprestarLivro("titulo", 1);
+        biblioteca.emprestarLivro("titulo1", 1);
+        biblioteca.devolverLivro("titulo2", 2);
+        biblioteca.emprestarLivro("titulo1", 1);
+        biblioteca.devolverLivro("titulo1", 10);
     }
 }

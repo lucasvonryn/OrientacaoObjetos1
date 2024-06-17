@@ -50,4 +50,11 @@ public class Livro {
 
         return this.diaEmprestimo;
     }
+
+    @Override
+    public String toString() {
+        return "Livro [titulo=" + titulo + ", autor=" + autor + ", anoPublicacao=" + anoPublicacao + ", editora="
+                + editora + ", numPaginas=" + numPaginas + ", disponivel=" + disponivel + ", diaEmprestimo="
+                + diaEmprestimo + ", diaDevolucao=" + diaDevolucao + "]";
+    }
 }

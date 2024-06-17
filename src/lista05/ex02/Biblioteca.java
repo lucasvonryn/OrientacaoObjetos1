@@ -19,26 +19,36 @@ public class Biblioteca {
 
     public void verificarDiponibilidade(String titulo) {
 
+        boolean encontrou = false;
+
         for (Livro livro : livros) {
 
             if (livro.getTitulo() == titulo) {
+
+                encontrou = true;
                 
                 if (livro.getDisponivel()) {
                     System.out.println("Livro disponível.");
                 } else {
                     System.out.println("Livro indisponível.");
                 }
-            } else {
-                System.out.println("Livro não encontrado.");
             }
+        }
+
+        if (!encontrou) {
+            System.out.println("Livro não encontrado.");
         }
     }
 
     public void emprestarLivro(String titulo, int diaEmprestimo) {
 
+        boolean encontrou = false;
+
         for (Livro livro : livros) {
 
             if (livro.getTitulo() == titulo) {
+
+                encontrou = true;
                 
                 if (livro.getDisponivel()) {
                     livro.setDisponivel(false);
@@ -47,9 +57,11 @@ public class Biblioteca {
                 } else {
                     System.out.println("Livro indisponível para impréstimo.");
                 }
-            } else { 
-                System.out.println("Livro não encontrado.");
             }
+        }
+
+        if (!encontrou) {
+            System.out.println("Livro não encontrado.");
         }
     }
 
@@ -57,10 +69,13 @@ public class Biblioteca {
 
         int totalDias;
         int diasExcedidos;
+        boolean encontrou = false;
 
         for (Livro livro : livros) {
 
             if (livro.getTitulo() == titulo) {
+
+                encontrou = true;
                 
                 if (!livro.getDisponivel()) {
                     
@@ -72,15 +87,17 @@ public class Biblioteca {
                         System.out.println("Livro devolvido com sucesso!");
                     } else {
                         livro.setDisponivel(true);
-                        System.out.println("Você excedeu o prazo máximo para devolução em " + diasExcedidos + ".");
-                        System.out.println("A multa é de R$ 1,50 por dia, total: " + (diasExcedidos * 1.5));
+                        System.out.println("Você excedeu o prazo máximo para devolução em " + diasExcedidos + " dia(s).");
+                        System.out.println("A multa é de R$ 1,50 por dia, total: R$ " + (diasExcedidos * 1.5));
                     }
                 } else {
                     System.out.println("Livro já está disponível. Não é possível devolve-lo.");
                 }
-            } else {
-                System.out.println("Livro não encontrado.");
             }
+        }
+
+        if (!encontrou) {
+            System.out.println("Livro não encontrado.");
         }
     }
 }
