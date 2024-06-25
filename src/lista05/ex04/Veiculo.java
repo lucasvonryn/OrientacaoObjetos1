@@ -21,6 +21,11 @@ public class Veiculo {
         this.estacionado = estacionado;
     }
 
+    public String getPlaca() {
+
+        return placa;
+    }
+
     @Override
     public String toString() {
         return "Veiculo [placa=" + placa + ", estacionado=" + estacionado + "]";
