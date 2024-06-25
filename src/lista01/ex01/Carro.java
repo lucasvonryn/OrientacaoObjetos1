@@ -1,4 +1,4 @@
-package lista01.ex1;
+package lista01.ex01;
 
 public class Carro {
     

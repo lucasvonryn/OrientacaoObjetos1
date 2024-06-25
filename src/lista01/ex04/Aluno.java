@@ -1,4 +1,4 @@
-package lista01.ex4;
+package lista01.ex04;
 
 public class Aluno {
 
