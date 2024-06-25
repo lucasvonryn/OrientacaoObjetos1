@@ -16,24 +16,30 @@ public class Estacionamento {
 
         for (Vaga vaga : vagas) {
 
-            // Se a vaga não estiver ocupada...
-            if (!vaga.getOcupada()) {
-                
-                vaga.setVeiculo(veiculo);
-                vaga.setOcupada(true);
-                vaga.setHoraEntrada(horaEntrada);
+            // Se o veículo ainda não estiver estacionado...
+            if (!veiculo.getEstacionado()) {
 
-                System.out.println("Vaga " + vaga.getIdVaga() + " alocada com sucesso!");
-                return;
+                veiculo.setEstacionado(true);
+
+                // Se a vaga não estiver ocupada...
+                if (!vaga.getOcupada()) {
+                    
+                    vaga.setVeiculo(veiculo);
+                    vaga.setOcupada(true);
+                    vaga.setHoraEntrada(horaEntrada);
+
+                    System.out.println("Vaga " + vaga.getIdVaga() + " alocada com sucesso!");
+                    return;
+                }
             }
         }
 
-        System.out.println("Nenhuma vaga está disponível no momento.");
+        System.out.println("Nenhuma vaga está disponível ou o veículo já está estacionado.");
     }
 
     public void retirarVeiculo(Veiculo veiculo, int horaSaida) {
 
-
+        
     }
 
     public void calcularContaEstacionamento() {
