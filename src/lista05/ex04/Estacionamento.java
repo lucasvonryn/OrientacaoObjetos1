@@ -37,7 +37,20 @@ public class Estacionamento {
 
     public void retirarVeiculo(Veiculo veiculo, int horaSaida) {
 
-        
+        if (!veiculo.getEstacionado()) {
+            System.out.println("Veículo " + veiculo.getPlaca() + " não está estacionado.");
+            return;
+        }
+
+        for (Vaga vaga : vagas) {
+            if (vaga.getVeiculo() == veiculo) {
+                vaga.setOcupada(false);
+                vaga.setVeiculo(null);
+                veiculo.setHoraSaida(horaSaida);
+                veiculo.setEstacionado(false);
+                System.out.println("Veículo " + veiculo.getPlaca() + " retirado com sucesso da vaga " + vaga.getIdVaga());
+            }
+        }
     }
 
     // Calcula o valor a pagar pelo tempo que o veículo ficou no estacionamento
@@ -48,14 +61,14 @@ public class Estacionamento {
 
         totalHora = veiculo.getHoraSaida() - veiculo.getHoraEntrada();
 
-        if (totalHora <= 3 && totalHora >=0) {
+        if (totalHora <= 3 && totalHora > 0) {
             valorTotal = 3.0;
-            System.out.println("O veículo de placa " + veiculo.getPlaca() + " ficou estacionado " + totalHora + ". Total a pagar: R$ " + valorTotal);
+            System.out.println("O veículo de placa " + veiculo.getPlaca() + " ficou estacionado " + totalHora + " hrs. Total a pagar: R$ " + valorTotal);
         }
 
         if (totalHora > 3) {
             valorTotal = ((totalHora - 3) * 0.5) + 3;
-            System.out.println("O veículo de placa " + veiculo.getPlaca() + " ficou estacionado " + totalHora + ". Total a pagar: R$ " + valorTotal);
+            System.out.println("O veículo de placa " + veiculo.getPlaca() + " ficou estacionado " + totalHora + " hrs. Total a pagar: R$ " + valorTotal);
         }
     }
 

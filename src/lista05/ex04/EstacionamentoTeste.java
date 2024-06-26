@@ -23,8 +23,20 @@ public class EstacionamentoTeste {
         estacionamento1.adicionarVaga(vaga2);
         estacionamento1.adicionarVaga(vaga3);
 
-        // Estacionando um veículo na vaga1
         estacionamento1.estacionarVeiculo(veiculo1, 10);
         estacionamento1.estacionarVeiculo(veiculo1, 10);
+        estacionamento1.estacionarVeiculo(veiculo2, 10);
+        estacionamento1.estacionarVeiculo(veiculo3, 10);
+        estacionamento1.estacionarVeiculo(veiculo4, 10);
+
+        estacionamento1.retirarVeiculo(veiculo4, 12);
+        estacionamento1.retirarVeiculo(veiculo1, 12);
+        estacionamento1.retirarVeiculo(veiculo2, 13);
+        estacionamento1.retirarVeiculo(veiculo3, 16);
+
+        estacionamento1.calcularContaEstacionamento(veiculo1);
+        estacionamento1.calcularContaEstacionamento(veiculo2);
+        estacionamento1.calcularContaEstacionamento(veiculo3);
+        estacionamento1.calcularContaEstacionamento(veiculo4);
     }
 }
