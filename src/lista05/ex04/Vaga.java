@@ -5,8 +5,6 @@ public class Vaga {
     private int idVaga;
     private Veiculo veiculo;
     private boolean ocupada;
-    private int horaEntrada;
-    private int horaSaida;
 
     public Vaga(int idVaga) {
 
@@ -37,25 +35,5 @@ public class Vaga {
     public boolean getOcupada() {
 
         return ocupada;
-    }
-
-    public int getHoraEntrada() {
-
-        return horaEntrada;
-    }
-
-    public void setHoraEntrada(int horaEntrada) {
-
-        this.horaEntrada = horaEntrada;
-    }
-
-    public int getHoraSaida() {
-
-        return horaSaida;
-    }
-
-    public void setHoraSaida(int horaSaida) {
-
-        this.horaSaida = horaSaida;
     }
 }

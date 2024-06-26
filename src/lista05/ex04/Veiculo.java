@@ -4,6 +4,8 @@ public class Veiculo {
     
     private String placa;
     private boolean estacionado;
+    private int horaEntrada;
+    private int horaSaida;
 
     public Veiculo(String placa) {
 
@@ -24,6 +26,26 @@ public class Veiculo {
     public String getPlaca() {
 
         return placa;
+    }
+
+    public int getHoraEntrada() {
+
+        return horaEntrada;
+    }
+
+    public void setHoraEntrada(int horaEntrada) {
+
+        this.horaEntrada = horaEntrada;
+    }
+
+    public int getHoraSaida() {
+
+        return horaSaida;
+    }
+
+    public void setHoraSaida(int horaSaida) {
+
+        this.horaSaida = horaSaida;
     }
 
     @Override

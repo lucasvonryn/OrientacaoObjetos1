@@ -26,8 +26,5 @@ public class EstacionamentoTeste {
         // Estacionando um veículo na vaga1
         estacionamento1.estacionarVeiculo(veiculo1, 10);
         estacionamento1.estacionarVeiculo(veiculo1, 10);
-        estacionamento1.estacionarVeiculo(veiculo2, 10);
-        estacionamento1.estacionarVeiculo(veiculo3, 10);
-        estacionamento1.estacionarVeiculo(veiculo4, 10);
     }
 }
