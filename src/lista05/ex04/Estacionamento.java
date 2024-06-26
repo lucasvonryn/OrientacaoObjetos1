@@ -15,7 +15,6 @@ public class Estacionamento {
     public void estacionarVeiculo(Veiculo veiculo, int horaEntrada) {
 
         for (Vaga vaga : vagas) {
-
             // Se a vaga estiver ocupada, passa para a próxima iteração, senão, cai no else
             if (vaga.getOcupada()) {
                 continue;
