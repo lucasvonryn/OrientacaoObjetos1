@@ -1,4 +1,4 @@
-package aula13.exemplo02;
+package aula13.heranca.exemplo02;
 
 public class ProfessorTeste {
     

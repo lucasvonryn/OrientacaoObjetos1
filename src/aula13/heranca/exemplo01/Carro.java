@@ -1,4 +1,4 @@
-package aula13.exemplo01;
+package aula13.heranca.exemplo01;
 
 public class Carro extends Veiculo {
  
