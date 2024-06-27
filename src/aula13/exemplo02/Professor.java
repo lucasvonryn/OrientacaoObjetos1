@@ -17,16 +17,19 @@ public class Professor {
 
     public void lancarFrequencia() {
 
-
+        System.out.println(this.nome + " está lançando frequência.");
     }
 
     public void aplicarAvaliacao() {
 
-
+        System.out.println(this.nome + " está aplicando avaliação.");
     }
 
     public void imprimirDadosProfessor() {
 
-        
+        System.out.println("Número de registro: " + this.numeroRegistro);
+        System.out.println("Nome: " + this.nome);
+        System.out.println("Data da nomeação: " + this.dataNomeacao);
+        System.out.println("Salário: R$ " + this.salario);
     }
 }
