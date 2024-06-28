@@ -8,4 +8,9 @@ public class PessoaJuridica {
 
         System.out.println("Validando CNPJ.");
     }
+
+    @Override
+    public String toString() {
+        return "PessoaJuridica [cnpj=" + cnpj + "]";
+    }
 }

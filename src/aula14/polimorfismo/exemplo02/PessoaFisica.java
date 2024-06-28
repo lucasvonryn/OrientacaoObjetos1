@@ -8,4 +8,9 @@ public class PessoaFisica extends Pessoa {
 
         System.out.println("Validando CPF.");
     }
+
+    @Override
+    public String toString() {
+        return "PessoaFisica [cpf=" + cpf + "]";
+    }
 }
